@@ -27,13 +27,13 @@ class Speaker {
     }
     return this.message;
   }
-
+  // .includes 쓰려면 tsc --target "ES6" "파일명" 해야함
   set Message(val: string) {
     let tmpMessage = val;
     if (!val.includes(this.name)) {
       tmpMessage = this.name + " " + val;
     }
-    this.Message = tmpMessage;
+    this.message = tmpMessage;
   }
 }
 
