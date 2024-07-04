@@ -45,10 +45,10 @@
 //   }
 // }
 
-import { Component } from "react";
-import ClassComponent from "./ClassComponent";
-import ArrowComponent from "./ArrowComponent";
-import P from "./P";
+// import { Component } from "react";
+// import ClassComponent from "./ClassComponent";
+// import ArrowComponent from "./ArrowComponent";
+// import P from "./P";
 
 // export default function App() {
 //   return <div>Hello function-keyword component!</div>;
@@ -82,32 +82,51 @@ import P from "./P";
 
 // export default App;
 
-import EventListner from "./pages/EventListner";
-import Onclick from "./pages/OnClick";
-import ReactOnClick from "./pages/ReactOnClick";
-import DispatchEvent from "./pages/DispatchEvent";
-import EventBubbling from "./pages/EventBubbling";
-import StopPropagation from "./pages/StopPropagation";
-import VariousInputs from "./pages/VariousInputs";
-import OnChange from "./pages/OnChange";
-import FileInput from "./pages/FileInput";
-import DragDrop from "./pages/DragDrop";
-import FileDrop from "./pages/FileDrop";
+// import EventListner from "./pages/EventListner";
+// import Onclick from "./pages/OnClick";
+// import ReactOnClick from "./pages/ReactOnClick";
+// import DispatchEvent from "./pages/DispatchEvent";
+// import EventBubbling from "./pages/EventBubbling";
+// import StopPropagation from "./pages/StopPropagation";
+// import VariousInputs from "./pages/VariousInputs";
+// import OnChange from "./pages/OnChange";
+// import FileInput from "./pages/FileInput";
+// import DragDrop from "./pages/DragDrop";
+// import FileDrop from "./pages/FileDrop";
+
+// export default function App() {
+//   return (
+//     <div>
+//       <FileDrop />
+//       <DragDrop />
+//       <FileInput />
+//       <OnChange />
+//       <VariousInputs />
+//       <StopPropagation />
+//       <EventBubbling />
+//       <DispatchEvent />
+//       <ReactOnClick />
+//       <Onclick />
+//       <EventListner />
+//     </div>
+//   );
+// }
+
+import Bootstrap from "./pages/Bootstrap";
+import Icon from "./pages/Icon";
+import Style from "./pages/Styles";
+import "./index.css";
+// import UsingIcon from './pages/UsingIcon';
+// import UsingIconWithCSSClass from './pages/UsingIconWithCSSClass';
 
 export default function App() {
   return (
     <div>
-      <FileDrop />
-      <DragDrop />
-      <FileInput />
-      <OnChange />
-      <VariousInputs />
-      <StopPropagation />
-      <EventBubbling />
-      <DispatchEvent />
-      <ReactOnClick />
-      <Onclick />
-      <EventListner />
+      {/* <UsingIconWithCSSClass />
+      <UsingIcon /> */}
+      <Style />
+      <Icon />
+      <Bootstrap />
     </div>
   );
 }
