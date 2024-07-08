@@ -131,16 +131,51 @@
 //   );
 // }
 
-import Tailwindcss from "./pages/Tailwindcss";
-import Color from "./pages/Color";
-import TextsTest from "./pages/TextsTest";
+// import Tailwindcss from "./pages/Tailwindcss";
+// import Color from "./pages/Color";
+// import TextsTest from "./pages/TextsTest";
 
-export default function App() {
+// export default function App() {
+//   return (
+//     <div>
+//       <TextsTest />
+//       <Color />
+//       <Tailwindcss />
+//     </div>
+//   );
+// }
+
+import AvatarTest from "./pages/AvatarTest";
+import BackgroundImageTest from "./pages/BackgroundImageTest";
+import BorderTest from "./pages/BorderTest";
+import DisplayNoneTest from "./pages/DisplayNoneTest";
+import DisplayTest from "./pages/DisplayTest";
+import DivTest from "./pages/DivTest";
+import HeightTest from "./pages/HeightTest";
+import ImageTest from "./pages/ImageTest";
+import MarginTest from "./pages/MarginTest";
+import OverlayTest from "./pages/OverlayTest";
+import PaddingTest from "./pages/PaddingTest";
+import PositionTest from "./pages/PositionTest";
+import ViewportTest from "./pages/ViewportTest";
+
+function App() {
   return (
-    <div>
-      <TextsTest />
-      <Color />
-      <Tailwindcss />
-    </div>
+    <main>
+      <OverlayTest />
+      <PositionTest />
+      <BorderTest />
+      <AvatarTest />
+      <DisplayNoneTest />
+      <DisplayTest />
+      <BackgroundImageTest />
+      <MarginTest />
+      <PaddingTest />
+      <HeightTest />
+      <ViewportTest />
+      <ImageTest />
+      <DivTest />
+    </main>
   );
 }
+export default App;

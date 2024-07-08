@@ -1,10 +1,16 @@
-import { Title } from "../components";
+import { Subtitle, Title, Div } from "../components";
+import * as D from "../data";
 
-export default function CopyMe() {
+const src = D.randomImage(3000, 1600);
+
+export default function ImageTest() {
   return (
     <section className="mt-4">
-      <Title>CopyMe</Title>
-      <div className="mt-4"></div>
+      <Title>ImageTest</Title>
+      <img src={src} className="bg-gray-300" width={400} height={400}></img>
+      <Div className="mt-4 bg-gray-300" src={src}>
+        <Subtitle className="text-gray-500 h-96">Some Text here</Subtitle>
+      </Div>
     </section>
   );
 }
