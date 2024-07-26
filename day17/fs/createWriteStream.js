@@ -14,6 +14,6 @@ writeStream.end();
 const writeStream2 = fs.createWriteStream("./writeme2-1.txt");
 
 for (let i = 0; i < 5; i++) {
-  let a = "0".repeat(5 - i) + "1".repeat(i);
+  let a = "0".repeat(4 - i) + "1".repeat(i + 1);
   writeStream2.write(a + "\n");
 }
