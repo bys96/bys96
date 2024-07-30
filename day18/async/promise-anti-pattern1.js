@@ -14,7 +14,7 @@ myWork("done").then(
     console.log(value);
   },
   function (error) {
-    console.log(err);
+    console.error(error);
   }
 );
 
