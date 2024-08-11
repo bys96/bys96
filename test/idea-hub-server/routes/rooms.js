@@ -1,5 +1,5 @@
 const express = require("express");
-const roomPromise = require("../Models/Room"); // roomPromise 가져오기
+const roomPromise = require("../Models/Room"); // Promise를 가져옴
 const router = express.Router();
 
 router.post("/", async (req, res) => {

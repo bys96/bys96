@@ -1,32 +1,39 @@
 const { DataTypes } = require("sequelize");
-const sequelizePromise = require("../sequelize"); // sequelizePromise 가져오기
+const sequelizePromise = require("../sequelize"); // sequelize 인스턴스를 가져옴
 
-const initializeRoomModel = async () => {
+async function defineRoomModel() {
   const sequelize = await sequelizePromise; // sequelize 인스턴스 대기
-  const Room = sequelize.define("Room", {
-    title: {
-      type: DataTypes.STRING,
-      allowNull: false,
+
+  const Room = sequelize.define(
+    "Room",
+    {
+      title: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      roomType: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      startTime: {
+        type: DataTypes.TIME,
+        allowNull: false,
+      },
+      duration: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      },
+      keyword: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
     },
-    roomType: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    startTime: {
-      type: DataTypes.TIME,
-      allowNull: false,
-    },
-    duration: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    keyword: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-  });
+    {
+      timestamps: true, // 이 옵션을 통해 Sequelize가 자동으로 createdAt과 updatedAt을 관리합니다.
+    }
+  );
 
   return Room;
-};
+}
 
-module.exports = initializeRoomModel(); // Promise를 반환
+module.exports = defineRoomModel();

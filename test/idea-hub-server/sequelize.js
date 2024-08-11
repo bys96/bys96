@@ -41,6 +41,4 @@ async function initializeSequelize() {
   return sequelize;
 }
 
-const sequelizePromise = initializeSequelize(); // Promise를 반환
-
-module.exports = sequelizePromise;
+module.exports = initializeSequelize(); // sequelize 인스턴스를 반환하는 Promise를 내보냄
